@@ -1,3 +1,5 @@
-<p>
-  pokemon-details works!
-</p>
+<div *ngIf="pokemon">
+  <h2>{{ pokemon.name | uppercase }} Details</h2>
+  <img [src]="pokemon.image">
+  <p>Evolved from: {{pokemon.evolves_from}}</p>
+</div>
