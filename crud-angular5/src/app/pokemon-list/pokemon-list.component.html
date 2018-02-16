@@ -1,7 +1,7 @@
 <div *ngIf="pokemonData">
   <ul>
     <li *ngFor="let pokemon of pokemonData.pokemons">
-      <span>{{pokemon.name}}</span>
+      <a routerLink="/pokemon/{{pokemon._id}}">{{pokemon.name}}</a>
     </li>
   </ul>
 </div>
